@@ -1,0 +1,92 @@
+@import "utils/themes";
+@import "utils/vars";
+@import "utils/mixins";
+
+@import "utils/reset";
+@import "utils/normalize";
+@import "utils/container";
+@import "utils/fonts";
+@import "utils/scrolling";
+@import "utils/animations";
+
+@import "../components/Logo/logo.scss";
+@import "../components/Icons/icon.scss";
+
+@import "../components/Breadcrumbs/breadcrumbs.scss";
+
+// header elements
+@import "../components/header/header.scss";
+@import "../components/Navigation/navigation.scss";
+@import "../components/NavigationToggled/navigation-toggled.scss";
+@import "../components/IconBar/icon-bar.scss";
+@import "../components/IconSet/icon-set.scss";
+@import "../components/Burger/burger.scss";
+@import "../components/SearchingArea/searching-area.scss";
+@import "../components/SearchingField/searching-field.scss";
+
+// home page
+@import "../pages/HomePage/home-page.scss";
+
+// categories
+@import "../components/Categories/categories.scss";
+@import "../components/CategoryCard/category-card.scss";
+
+// gadgets page
+@import "../components/GadgetsPage/gadgets-page.scss";
+@import "../pages/GadgetsPage/gadgets-page.scss";
+@import "../components/GadgetsDisplayControl/gadgetsDisplayControl.scss";
+@import "../components/ProductList/ProductList.scss";
+
+// product card
+@import "../components/ProductCard/ProductCard.scss";
+@import "../components/ArrowButton/ArrowButton.scss";
+@import "../components/HeartButton/HeartButton.scss";
+@import "../components/BuyButton/buy-button.scss";
+
+// sliders
+@import "../components/Pagination/pagination.scss";
+
+// about
+@import "../pages/AboutPage/AboutPage.scss";
+
+// footer
+@import "../components/Footer/Footer.scss";
+
+// loader
+@import "../components/Loader/Loader.scss";
+
+// cart
+@import "../pages/CartPage/cart-page.scss";
+
+@import "../components/Banner/banner.scss";
+
+@import "../components/Slider/slider.scss";
+
+@import "../components/AutorizationForm/autorization-form.scss";
+@import "../components/Modals/modals.scss";
+
+// contacts
+@import "../pages/Contacts/Contacts.scss";
+
+//not found page
+@import "../components/NotFoundWhite/NotFoundWhite.scss";
+@import "../components/NotFoundBlack/NotFoundBlack.scss";
+
+// accessories
+@import "../pages/ProfilePage/profile-page.scss";
+
+@import "../components/NoGadgetsMessage/no-gadget-message.scss";
+
+@import "../components/LastViewed/LastViewed.scss";
+
+//suport page
+@import "../pages/SupportPage/SupportPage.scss";
+@import "../components/Profile/Profile.scss";
+
+// should be moved to other folder
+.content {
+  height: fit-content;
+  position: relative;
+  z-index: 1;
+  background-color: $bg-color-main;
+}

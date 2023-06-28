@@ -1,0 +1,15 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1000;
+  background-color: $bg-color-main;
+
+  &__main {
+    position: relative;
+    z-index: 1001;
+    display: flex;
+    gap: 24px;
+    background-color: $bg-color-main;
+    box-shadow: 0 0.5px 0 $separator-color;
+  }
+}

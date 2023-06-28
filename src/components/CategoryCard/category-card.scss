@@ -1,0 +1,32 @@
+.category-card {
+  &__img-container {
+    max-width: 368px;
+    height: 368px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter $transition-duration ease,
+    transform $transition-duration ease;
+
+    &_disabled {
+      filter: grayscale(100%);
+
+      @include onTablet {
+       filter: grayscale(0);;
+      }
+    }
+  }
+
+  &:hover .category-card__image {
+    transform: scale(1.1);
+
+    &_disabled {
+      filter: grayscale(100%);
+    }
+  }
+}

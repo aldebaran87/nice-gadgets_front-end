@@ -1,0 +1,17 @@
+.like {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color-controllers;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $bg-color-controllers-hov;
+  }
+
+  &:active {
+    background-color: $bg-color-controllers;
+  }
+}

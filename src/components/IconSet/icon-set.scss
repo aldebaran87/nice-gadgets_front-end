@@ -1,0 +1,14 @@
+.icon-set {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+  &__item {
+    border: 1px solid $bg-color-controllers;
+    border-radius: 4px;
+
+    &--2-3 {
+      grid-column-start: span 2;
+    }
+  }
+}

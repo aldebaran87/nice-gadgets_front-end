@@ -1,0 +1,41 @@
+.nav {
+  display: none;
+
+  @include onDesktop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 32px;
+
+    @include onDesktop {
+      flex-direction: row;
+      align-self: auto;
+      gap: 64px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 4%;
+
+    &--active {
+      color: $text-color-main;
+      @include underlineActive;
+    }
+  }
+}
